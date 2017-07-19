@@ -769,7 +769,7 @@
 	<biome_generators>
 		<biome_generator name="vanilla">
 			<module name="voronoi" type="Voronoi">
-				<property name="frequency" value="0.0005"/>
+				<property name="frequency" value="0.00065"/>
 				<!-- want smaller biomes sizes? increase Value="" Vanilla was "0.0008" -->
 				<property name="displacement" value="0.5"/>
 			</module>
@@ -800,7 +800,7 @@
 	<biome_intensity_generators>
 		<biome_intensity_generator name="vanilla">
 			<module name="voronoi" type="Voronoi">
-				<property name="frequency" value="0.0005"/>
+				<property name="frequency" value="0.00065"/>
 				<!-- want smaller biomes sizes? increase Value="" Vanilla was "0.0008" -->
 				<property name="displacement" value="0.5"/>
 				<property name="distanceEnabled" value="true"/>
