@@ -163,11 +163,11 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 -->
 <buff id="DrinkBeer" duration="1" actions="increment(beers, 1, 0, 0, 1)">
-	<modify id="0" stat="stamina" amount="2" rate="1"/>
+	<modify id="0" stat="stamina" amount="3" rate="1"/>
 </buff>
 
 <buff id="DrinkGrainAlcohol" duration="1" actions="increment(beers, 4, 0, 0, 1)">
-	<modify id="0" stat="stamina" amount="2" rate="1"/>
+	<modify id="0" stat="stamina" amount="3" rate="1"/>
 </buff>
 
 <buff id="MetabolizeBeer" buffif="beers greater 0" debuffif="beers less 1" actions="increment(beers, -1, 100t, 0, 0);min(beers, 0)"/>
@@ -212,7 +212,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 <!--End-->
 <buff id="CoffeeStaminaBoost" duration="180" stack="extend" type="staminaup" icon="ui_game_symbol_coffee"
 	name_key="caffeineBuzz" description_key="caffeineBuzzDesc" tooltip_key="caffeineBuzzTooltip" causes="coffee">
-	<modify id="0" stat="stamina" amount="2" rate="1"/>
+	<modify id="0" stat="stamina" amount="3" rate="1"/>
 	<modify id="1" stat="coretemp" modifyValue="10"/>
 </buff>
 
