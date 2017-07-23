@@ -200,6 +200,7 @@
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
 		<property name="EconomicValue" value="600"/>
+		<property name="Weight" value="10"/>
 		<property name="HoldType" value="13"/>
 		<property name="LightSource" value="lightSource"/>
 		<property name="ActivateObject" value="lightSource"/>
