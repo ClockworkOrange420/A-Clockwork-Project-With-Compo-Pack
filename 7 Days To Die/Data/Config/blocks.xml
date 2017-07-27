@@ -14752,6 +14752,7 @@
 			<property name="mechanicalParts" value="2"/>
 			<property name="electricParts" value="2"/>
 		</property>
+		<property name="DowngradeBlock" value="autoTurretBroken2"/>
 		<drop event="Harvest" name="mechanicalParts" count="1,4" tool_category="Disassemble"/>
 		<drop event="Harvest" name="electricParts" count="1,4" tool_category="Disassemble"/>
 		<drop event="Harvest" name="scrapIron" count="10,40" tool_category="Harvest"/>
@@ -14785,6 +14786,7 @@
 		<property name="FireSound" value="pump_shotgun_fire"/>
 		<property name="EconomicValue" value="2500"/>
 		<property name="PickupJournalEntry" value="cameraTip"/>
+		<property name="DowngradeBlock" value="shotgunTurretBroken2"/>
 	</block>
 	<!-- Free -->
 	<block id="1774" name="burningBarrelPlayer">
@@ -17308,7 +17310,7 @@
 			<property name="mechanicalParts" value="8"/>
 		</property>
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="bladeTrapBroken2"/>
+			<property name="ToBlock" value="bladeTrap"/>
 			<property name="Item" value="electricParts"/>
 			<property name="ItemCount" value="6"/>
 			<property name="UpgradeHitCount" value="4"/>
