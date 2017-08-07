@@ -5,15 +5,16 @@
 		<!-- if having trouble loading try changing the cell_size to "2000" or "2200" -->
 		<ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0" generation_distance="30000" terrain_generator="vanilla" biome_generator="vanilla">
 			<cell_rule name="default" prob="1"/>
-			<!--<cell_rule name="customHubTest" position="0,1" prob="0"/>-->
 		</ruleset>
 	</rulesets>
 	<cell_rules>
 		<cell_rule name="default">
-			<cave_count value="1,8"/>
+			<cave_count value="4,8"/>
 			<path_material value="asphalt" />
 			<path_radius value="10" />
-			<hub_rule name="cityLarge" prob="1"/>
+			<hub_rule name="townLarge" prob="0.3"/>
+			<hub_rule name="cityLarge" prob="0.6"/>
+			<hub_rule name="rural" prob="0.3"/>
 			<wilderness_rule name="wildernessDefault" prob="1"/>
 		</cell_rule>
 	</cell_rules>
@@ -100,14 +101,7 @@
 			<prefab rule="detailFillerGroup"/>
 		</prefab_rule>
 		<prefab_rule name="residentialOldGroup">
-			<prefab name="abandoned_house_01" max_count="1" />
-			<prefab name="abandoned_house_02" max_count="1" />
-			<prefab name="abandoned_house_03" max_count="1" />
-			<prefab name="abandoned_house_04" max_count="1" />
-			<prefab name="abandoned_house_05" max_count="1" />
-			<prefab name="abandoned_house_06" max_count="1" />
-			<prefab name="abandoned_house_07" max_count="1" />
-			<prefab name="abandoned_house_08" max_count="1" />
+			<prefab rule="abandoned_houses" max_count="4" />
 			<prefab name="bombshelter_lg_01" max_count="1" />
 			<prefab name="bombshelter_md_01" max_count="1" />
 			<prefab name="cemetery_01" max_count="1" />
@@ -193,6 +187,9 @@
 			<prefab name="xvanilla_Trailerhousemix03" max_count="1" />
 			<prefab name="xvanilla_Trailerhousemix04" max_count="1" />
 			<prefab name="xcostum_LittleLeagueBaseball(by_Curmudgeon)" max_count="1" />
+			<prefab name="xcostum_Rangercabin(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_Hightop(by_Curbolt)" max_count="1" />
+			<prefab name="xcostum_Hospital(by_Wsiegel)" max_count="1" />
 		</prefab_rule>
 		<prefab_rule name="residentialNewGroup">
 			<prefab name="house_new_mansion_01" max_count="1"/>
@@ -243,6 +240,7 @@
 			<prefab name="xcostum_WulftownA(by_WereWulfen)" max_count="1" />
 			<prefab name="xcostum_House(by_LastI)" max_count="1" />
 			<prefab name="xcostum_House(by_ShoNuff)" max_count="1" />
+			<prefab name="xcostum_Twinhaus-Hostel(by__Tom_GERPVE)" max_count="1" />
 		</prefab_rule>
 		<prefab_rule name="commercialGroup">
 			<prefab name="store_gun_sm_01" prob="0.6" max_count="1" />
@@ -291,6 +289,8 @@
 			<prefab name="xcostum_townsquare(by_snake0567)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Warehouse(by_Illidua)" max_count="1" />
 			<prefab name="xcostum_pistol_gunshop(by_magoli)" max_count="1" />
+			<prefab name="xcostum_McDowell_restaurant(by_LazMan)" max_count="1" />
+			<prefab name="xcostum_seafoodshop(by_Guppycur)" max_count="1" />
 		</prefab_rule>
 		<prefab_rule name="downtownGroup">
 			<prefab name="business_red_brick_01" max_count="1"/>
@@ -352,14 +352,14 @@
 			<prefab name="xcostum_Courthouse(by_stallionsden)" max_count="1" />
 			<prefab name="xcostum_CurlingCenter(by_magoli)" max_count="1" />
 			<prefab name="xcostum_TheSect_Followers-of-M(by_magoli)" max_count="1" />
-			<prefab name="xcostum_UnionStation(by_BuLLeTZ)" max_count="1" />
+			<prefab name="xcostum_Hightop(by_Curbolt)" max_count="1" />
 		</prefab_rule>
 		<prefab_rule name="skyscrapers">
 			<prefab name="skyscraper_01" max_count="1" prob="50"/>
 			<prefab name="skyscraper_02" max_count="1" prob="50"/>
 			<prefab name="skyscraper_03" max_count="1" prob="50"/>
 			<prefab name="skyscraper_04" max_count="1" prob="50"/>
-			<prefab name="xcostum_Skycpraper(by_Peppino)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Skycpraper(by_Peppino)" max_count="1" prob="50" />
 		</prefab_rule>
 		<prefab_rule name="industrialGroup">
 			<prefab name="utility_waterworks_01" max_count="1" />
@@ -370,7 +370,6 @@
 			<prefab name="factory_lg_02" max_count="1"/>
 			<prefab name="installation_red_mesa" max_count="1"/>
 			<prefab name="sawmill_01_snow" max_count="1"/>
-			<prefab name="utility_celltower_01" max_count="1"/>
 			<prefab name="utility_celltower_01" max_count="1"/>
 			<prefab name="junkyard_lg_01" max_count="1" />
 			<prefab name="junkyard_med_01" max_count="1" />
@@ -407,7 +406,6 @@
 			<prefab name="xcostum_Hydro_Plant(by_LuckyStar)" max_count="1" />
 			<prefab name="xcostum_Cell_Tower(by_LuckyStar)" max_count="1" />
 			<prefab name="xcostum_Science_lab(by_kinklade)" max_count="1" />
-			<prefab name="xcostum_Utility_Combo(by_LuckyStar)" max_count="1" />
 			<prefab name="xcostum_Prison1(by_Curbolt)" max_count="1" />
 			<prefab name="xcostum_Asylum(by_Wsiegel)" max_count="1" />
 			<prefab name="xcostum_Haulier_lg(by_Limodor)" max_count="1" />
@@ -446,6 +444,9 @@
 			<prefab name="xcostum_TruckStop(by_magoli)" max_count="1" />
 			<prefab name="xcostum_TruckStop_Garage(by_stallionsden)" max_count="1" />
 			<prefab name="xcostum_TruckStop_Roadhouse(by_stallionsden)" max_count="1" />
+			<prefab name="xcostum_nepa_base(by_Eihwaz)" max_count="1" />
+			<prefab name="xcostum_Rangercabin(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_Motel(by_Limodor)" max_count="1" />
 		</prefab_rule>
 		<prefab_rule name="wildernessGroup">
 			<prefab rule="traderGroup" min_count="1" max_count="1"/>
@@ -498,6 +499,7 @@
 			<prefab name="xcostum_Treehouse_sm(by_magoli)" max_count="1" prob="0.2" />
 			<prefab name="junkyard_lg_01" max_count="1" prob="0.1" />
 			<prefab name="xcostum_TheMill(by_MoNKeYest1)" max_count="1" prob="0.1" />
+			<prefab name="xcostum_Rangercabin(by_Guppycur)" max_count="1" prob="0.2" />
 		</prefab_rule>
 		<prefab_rule name="W_POIs_common_Set_C">
 			<prefab name="pond02" max_count="1" />
@@ -535,6 +537,8 @@
 			<prefab name="snowy_ski_lodge" max_count="1" prob="0.2"/>
 			<prefab name="xcostum_Chernobyl(by Maz_Burt)" max_count="1" prob="0.2"/>
 			<prefab name="xcostum_MiniBikeRaceTrack(by_Spider)" max_count="1" prob="0.3" />
+			<prefab name="xcostum_nepa_base(by_Eihwaz)" max_count="1" prob="0.2" />
+			<prefab name="xcostum_TheEstate(by_Ekk0)" max_count="1" prob="0.3" />
 		</prefab_rule>
 		<prefab_rule name="W_POIs_rare_Set_B">
 			<prefab name="xcostum_Nuclear_Powerplant(by_Rocky)" max_count="1" prob="0.3" />
@@ -546,13 +550,14 @@
 			<prefab name="xcostum_minigolf(by_magoli)" max_count="1" prob="0.1" />
 			<prefab name="factory_lg_02" max_count="1" prob="0.1" />
 			<prefab name="xcostum_Warehouse(by_Illidua)" max_count="1" prob="0.1" />
+			<prefab name="xcostum_McDowell_restaurant(by_LazMan)" max_count="1" prob="0.1" />
+			<prefab name="xcostum_Hospital(by_Wsiegel)" max_count="1" prob="0.2" />
 		</prefab_rule>
 		<prefab_rule name="W_POIs_superrare">
 			<prefab name="xcostum_ZHigh(by_Volar)" max_count="1" prob="0.4"/>
 			<prefab name="xcostum_RocketLaunchPad(by_Saeid)" max_count="1" prob="0.3"/>
 			<prefab name="xcostum_CrashedAirplane(by_LazMan)" max_count="1" prob="0.4"/>
 			<prefab name="xcostum_TV_Tower_Restaurant(by_magoli)" max_count="1" prob="0.2" />
-			<prefab name="xcostum_strange_cornfield(by_magoli)" max_count="1" prob="0.2"/>
 			<prefab name="xcostum_swimmingbath(by_magoli)" max_count="1" prob="0.4"/>
 			<prefab name="xcostum_WulftownCD(by_WereWulfen)" max_count="1" prob="0.2" />
 		</prefab_rule>
@@ -593,21 +598,21 @@
 			<prefab name="abandoned_house_08" max_count="1" />
 		</prefab_rule>
 		<prefab_rule name="detailFillerGroup">
-			<prefab name="mailbox1" max_count="1" prob="0.25"/>
-			<prefab name="street_light_01" max_count="1" prob="0.25"/>
-			<prefab name="street_light_02" max_count="1" prob="0.25"/>
-			<prefab name="sign_slow" max_count="4"/>
-			<prefab name="sign_speed_25" max_count="4"/>
-			<prefab name="sign_speed_35" max_count="4"/>
-			<prefab name="sign_speed_45" max_count="4"/>
-			<prefab name="sign_73_north" max_count="2"/>
-			<prefab name="sign_73_south" max_count="2"/>
-			<prefab name="sign_albuquerque" max_count="2"/>
-			<prefab name="sign_phoenix" max_count="2"/>
-			<prefab name="tree_burntpine_01" max_count="4"/>
-			<prefab name="tree_burntpine_02" max_count="4"/>
-			<prefab name="tree_burntpine_03" max_count="4"/>
-			<prefab name="water_tower_03" max_count="1"/>
+			<prefab name="mailbox1" prob="0.25"/>
+			<prefab name="street_light_01" prob="0.25"/>
+			<prefab name="street_light_02" prob="0.25"/>
+			<prefab name="sign_slow"/>
+			<prefab name="sign_speed_25"/>
+			<prefab name="sign_speed_35"/>
+			<prefab name="sign_speed_45"/>
+			<prefab name="sign_73_north"/>
+			<prefab name="sign_73_south"/>
+			<prefab name="sign_albuquerque"/>
+			<prefab name="sign_phoenix"/>
+			<prefab name="tree_burntpine_01"/>
+			<prefab name="tree_burntpine_02"/>
+			<prefab name="tree_burntpine_03"/>
+			<prefab name="water_tower_03" />
 		</prefab_rule>
 		<prefab_rule name="traderGroup">
 			<prefab name="settlement_trader_01" />

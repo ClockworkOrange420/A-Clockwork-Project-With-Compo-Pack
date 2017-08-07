@@ -12,7 +12,7 @@
     <property name="AllowedTownships" value="city,rural,town"/>
     <property name="SleeperVolumeStart" value="1,1,2"/>
     <property name="SleeperVolumeSize" value="41,6,42"/>
-    <property name="SleeperVolumeGroup" value="S_ZomUtilityWorker_Med"/>
+    <property name="SleeperVolumeGroup" value="S_Default_Med"/>
     <property name="SleeperVolumeGameStageAdjust" value=""/>
     <property name="SleeperIsLootVolume" value="False"/>
 </prefab>

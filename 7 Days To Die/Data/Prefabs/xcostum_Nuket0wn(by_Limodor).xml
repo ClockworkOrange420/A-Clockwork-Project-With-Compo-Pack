@@ -8,7 +8,7 @@
     <property name="YOffset" value="-5"/>
     <property name="DistantPOIYOffset" value="0"/>
     <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,desert,wasteland"/>
-    <property name="SleeperVolumeStart" value="1,5,1"/>
+    <property name="SleeperVolumeStart" value="0,5,1"/>
     <property name="SleeperVolumeSize" value="90,6,40"/>
     <property name="SleeperVolumeGroup" value="S_Default_L"/>
     <property name="SleeperVolumeGameStageAdjust" value=""/>
