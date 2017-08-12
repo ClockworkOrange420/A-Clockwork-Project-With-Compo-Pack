@@ -371,6 +371,7 @@
 			<prefab name="installation_red_mesa" max_count="1"/>
 			<prefab name="sawmill_01_snow" max_count="1"/>
 			<prefab name="utility_celltower_01" max_count="1"/>
+			<prefab name="utility_celltower_02" max_count="1"/>
 			<prefab name="junkyard_lg_01" max_count="1" />
 			<prefab name="junkyard_med_01" max_count="1" />
 			<prefab name="vacant_lot_med_01" max_count="1" />
