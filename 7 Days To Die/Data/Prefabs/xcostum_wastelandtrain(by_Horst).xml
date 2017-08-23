@@ -7,7 +7,7 @@
     <property name="Zoning" value="Industrial"/>
     <property name="YOffset" value="-2"/>
     <property name="DistantPOIYOffset" value="0"/>
-    <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
+    <property name="AllowedBiomes" value="plains,desert,wasteland"/>
     <property name="AllowedTownships" value="rural,wilderness"/>
     <property name="SleeperVolumeStart" value="0,0,0"/>
     <property name="SleeperVolumeSize" value="45,19,17"/>
