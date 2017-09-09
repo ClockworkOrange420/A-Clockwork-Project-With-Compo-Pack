@@ -662,7 +662,6 @@
 			<prefab name="tree_burntpine_01"/>
 			<prefab name="tree_burntpine_02"/>
 			<prefab name="tree_burntpine_03"/>
-			<prefab name="water_tower_03" />
 		</prefab_rule>
 		<prefab_rule name="traderGroup">
 			<prefab name="settlement_trader_01" />
